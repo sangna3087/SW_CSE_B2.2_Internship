@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grouping Selectors</title>
+    <title>Grouping Selectors|Descendant Selectors</title>
     <style>
         h1, h2, h3 {
             font-family: 'Courier New', Courier, monospace;
             color: rgb(137, 84, 203);
+        }
+        div p {
+            list-style-type: square;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(41, 159, 196);
+        }
+        ul {
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(183, 8, 8);
         }
     </style>
 </head>
@@ -16,5 +25,17 @@
     <h2>This is a heading 2</h2>
     <h3>This is a heading 3</h3>
     <h4>This is a heading 4</h4>
+    <div>
+        <p>This is a paragraph</p>
+    </div>
+        <p>This is a paragraph</p>
+        <p>Child Selector</p>
+        <p>Selectors</p>
+        <ul>
+            <li>Element Selector</li>
+            <li>Child Selector</li>
+            <li>Descendant Selector</li>
+        </ul>
+    
 </body>
 </html>
