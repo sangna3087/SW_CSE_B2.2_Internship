@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms 2</title>
+</head>
+<body>
+
+    <form action="" method="post" novalidate>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>Please fill out the form below:<br>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName*" required><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName*" required><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob*" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email*" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password*" required="" maxlength="8"><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone*" required maxlength="10" pattern="[0-9]{10}"><br>
+        </fieldset>
+        <fieldset>
+            <p>Preferences</p>
+            <p>Gender:</p>
+            <input type="radio" name="gender" id="Male" value="Male" required> <label for="Male">Male</label>
+             <input type="radio" name="gender" id="Female" value="Female" required> <label for="Female">Female</label>
+        </p> 
+        <p>
+            Skills:<br>
+            <input type="checkbox" name="skills" id="html" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="skills" id="css" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="skills" id="javascript" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </p>  
+        <p>
+            <label for="country">Country:</label>
+            <select name="country" id="country" >
+                <option value="India">India</option>
+                <option value="US">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+            </select> 
+        </fieldset> 
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        
+    </form>
+</body>
+</html>

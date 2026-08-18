@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .button {
+            background-color: rgb(231, 203, 168);
+            color: #333;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            cursor: pointer;
+            
+            /* Linear transition for color, ease for scaling */
+            transition: background-color 0.4s linear, 
+                        transform 0.2s ease, 
+                        border-color 0.4s linear;
+        }
+
+        /* Hover State */
+        .button:hover {
+            background-color: cadetblue;
+            color: white;
+            border-color: darkslategrey;
+            transform: translateY(-3px); /* Subtle hover lift */
+        }
+
+        /* Active (Click) State */
+        .button:active {
+            transform: translateY(0px) scale(0.97); /* Click press effect */
+            transition: transform 0.1s linear; /* Faster response on click */
+        }
+</style>
+</head>
+<body>
+    <p>CSS Transitions: allows a property to change smoothly from one value to another rather than immediately.</p>
+    
+    <button class="button">Click me</button>
+</body>
+</html>
