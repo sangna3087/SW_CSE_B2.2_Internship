@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors</title>
+    <style>
+        .named{
+            color: rgb(255, 0, 0);
+        }
+        .hex{
+            color: #00ff00;
+        }
+        .rgb{
+            color: rgb(0, 0, 255);
+        }
+        .hsl{
+            color: hsl(120, 100%, 50%);
+        }
+        .gradient{
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            display: inline-block;
+            
+        }
+    </style>
+</head>
+<body>
+    <p>CSS Colors</p>
+    <ol>
+        <li class="named">Named Color</li>
+        <li class="hex">Hexadecimal Color</li>
+        <li class="rgb">RGB Color</li>  
+        <li class="hsl">HSL & HSLA</li>
+        <li class="gradient">Gradient Color</li>
+    </ol>
+</body>
+</html>
